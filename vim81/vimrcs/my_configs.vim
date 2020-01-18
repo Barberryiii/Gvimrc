@@ -25,7 +25,7 @@ set relativenumber
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "reset vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>rr :source D:\gvim\Gvimrc\_vimrc<cr>
+map <leader>rr :source $VIMRUNTIME\..\_vimrc<cr>
 """"""""""""""""""""""""""""""
 "buftabline
 """""""""""""""""""""""""""""r
@@ -39,7 +39,7 @@ nnoremap <c-k> :bprev<cr>
 "autocmd vimenter * TagbarToggle 
 "map <silent> <leader>b :TagbarToggle<cr>
 nmap <F8> :TagbarToggle<CR>
-let g:tagbar_ctags_bin = 'D:\gvim\Gvimrc\vim81\my_plugins\ctags58\ctags.exe'
+let g:tagbar_ctags_bin = '$VIMRUNTIME\my_plugins\ctags58\ctags.exe'
 " let g:tagbar_left = 1
 " let g:tagbar_width =20 
 " let g:tagbar_autofocus =1 
@@ -68,6 +68,6 @@ let g:indentLine_char = '|'
 set nofixendofline 
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
-let g:ag_prg="D:/gvim/Gvimrc/vim81/my_plugins/ag.vim/ag.exe --column"
+let g:ag_prg="$VIMRUNTIME/my_plugins/ag.vim/ag.exe --column"
 
 set autowriteall
