@@ -17,10 +17,11 @@ set t_Co=256
 set mouse=a
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set line number
+"number: 行号; relative: 相对行号; cursorline: 当前行高亮
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number
-set relativenumber
+set norelativenumber
+set cursorline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "reset vim
