@@ -180,6 +180,19 @@ let g:go_fmt_command = "goimports"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic (syntax checker)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 10
+let g:syntastic_error_symbol = '✖'
+let g:syntastic_style_error_symbol = '✖'
+let g:syntastic_warning_symbol = '!'
+let g:syntastic_style_warning_symbol = '!'
+let g:syntastic_enable_highlighting = 1
+let g:syntastic_lua_checkers = ['luac', 'luacheck']
+let g:syntastic_stl_format = "[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]"
+
 let g:ale_linters = {
 \   'javascript': ['jshint'],
 \   'python': ['flake8'],
@@ -193,9 +206,9 @@ nmap <silent> <leader>a <Plug>(ale_next_wrap)
 let g:ale_sign_column_always = 1
 let g:ale_set_highlights = 0
 
-let g:ale_sign_error = '!'
+let g:ale_sign_error = '✗'
 let g:ale_sign_warning = '⚡'
-let g:ale_statusline_format = ['! %d', '⚡ %d', '✔ OK']
+let g:ale_statusline_format = ['✗ %d', '⚡ %d', '✔ OK']
 
 
 let g:ale_echo_msg_error_str = 'E'

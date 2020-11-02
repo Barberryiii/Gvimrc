@@ -18,6 +18,8 @@ Plug 'godlygeek/tabular'
 Plug 'Yggdroot/indentLine'
 Plug 'rking/ag.vim'
 Plug 'tacahiroy/ctrlp-funky'
+Plug 'vim-syntastic/syntastic'
+Plug 'mpeterv/luacheck'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
